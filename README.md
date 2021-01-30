@@ -20,11 +20,11 @@ The bandit early stopping policy with a smaller allowable slack that provides mo
 
 ## AutoML
 
-A classification task and the primary metric of 'accuracy' was specified in the AutoMl config. The AutoML generated multiple classification models and optimised the computation using the paramters specified in AutoMLConfig. The model with the highest accuracy value amongst all other models at the end of the AutoML run which found to be the VotingEnsemble model.
+A classification task and the primary metric of 'accuracy' was specified in the `AutoMLConfig`. The AutoML generated multiple classification models and optimised the computation using the paramters specified in AutoMLConfig. The model with the highest accuracy value amongst all other models at the end of the AutoML run which found to be the VotingEnsemble model.
 
 ## Pipeline comparison
 
-In terms of performance accuracy, the logistic regression model produced by the hyperdrive experiment (accuracy = 0.915) performed similar to the VotingEnsemble model (accuracy = 0.913) produced by the AutoML with a small difference of 0.002 in accuracy. This difference in accuracy can be explained by the fact that different models analyse data differently resulting in different accuracy numbers. In terms of architecture, unlike the hyperdrive experiment, the AutoML does not specify a model or list of model hyperparamters to optimise but rather, it explores different machine learing models for the specified task based on the specified primary metric. The best performing model can then be selected at the end of the experiment.
+In terms of performance accuracy, the logistic regression model produced by the `HyperDrive` experiment (accuracy = 0.915) performed similar to the VotingEnsemble model (accuracy = 0.913) produced by the `AutoML` experiment with a small difference of 0.002 in accuracy. This difference in accuracy can be explained by the fact that different models analyse data differently resulting in different accuracy numbers. In terms of architecture, unlike the hyperdrive experiment, the AutoML does not specify a model or list of model hyperparamters to optimise but rather, it explores different machine learing models for the specified task based on the specified primary metric. The best performing model can then be selected at the end of the experiment.
 
 
 ## Future work
