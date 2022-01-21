@@ -1,4 +1,4 @@
-# Optimizing an ML Pipeline in Azure
+# Optimizing a Machine Learning Pipeline in Azure
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
