@@ -2,12 +2,12 @@
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
-In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
+In this project, we build and optimize an Azure ML pipeline using the Python SDK and a base Scikit-learn model.
 This model is then compared to an Azure AutoML run.
 
 ## Summary
 
-This dataset contains data about bank marketing and we seek to predict if a client will subscribe to a term deposit using a provided Scikit-learn model. The hyperdrive run of the Azure SDK was used for optimising a provided logistic regression pipeline and for hyperparamters tuning. The best performing optimised hyperdrive model was compared with the best performing model produced by an AutoML config run based on the accuracy metric. For the hyperdrive experiment, the best performing model was a logistic regression with hyperparamters c = 0.9 and max_iteration = 75. The AutoML experiment produced a VotingEnsemble model as the best performing model with similar performance (accuracy difference of 0.002) as the model produced by the hyperdrive run. 
+This dataset contains bank marketing data and we seek to predict if a client will subscribe to a term deposit using a base Scikit-learn model. The hyperdrive run of the Azure SDK was used for optimising the base logistic regression pipeline and for hyperparamters tuning. The accuracy metric was used to compare the best performing optimised hyperdrive model with the best performing model produced by an AutoML config run. For the hyperdrive experiment, the best performing model was a logistic regression with hyperparamters c = 0.9 and max_iteration = 75. The AutoML experiment produced a VotingEnsemble model as the best performing model with similar performance (accuracy difference of 0.002) as the model produced by the hyperdrive run. 
 
 
 ## Scikit-learn Pipeline
